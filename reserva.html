@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reserva</title>
+	<style>
+		body{
+			/*background-color:#053d91;*/
+		}
+		.imagen{
+			padding:80px;
+			float: left;
+			width: 600px;
+			animation-name: car-animation;
+			animation-duration: 2000ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			transform-origin: center;
+			}
+		.reserva{
+			/*background-color:#053d91;*/
+			padding:5px;
+			float: right;
+		}
+		@keyframes car-animation {
+			0%{
+				transform: rotateY(0deg);
+			}
+			100%{
+				transform: rotateY(360deg);
+			}
+		}
+
+		.car-img{
+			perspective: 2000px;
+		}
+	</style>
+</head>
+<body>
+	<div class="car-img">
+		<img class="imagen" src="https://st.depositphotos.com/1732898/2869/i/450/depositphotos_28695855-stock-photo-modern-compact-van.jpg" alt="" width="400">
+	</div>
+	<DIV  class="reserva">
+	
+	<form action="resumenR.html" method="POST">
+			<h1>INICIAR RESERVA</h1>
+			
+			<tr>
+				<td>Tipo de Persona</td><br>
+				<td>
+					<input type="radio" name=" " value="natural">Persona Natural
+					<input type="radio" name=" " value="empresa">Empresa <br>
+					<p>La persona que realiza la reserva figurará como titular del contrato y la factura . <br>En caso de empresa  unipersonales debe de seleccionar la opcion "Empresa".</p>
+				</td>
+			</tr><br>
+			<tr>
+				<td><label >Seleccionar uno de los colores  disponibles </label></td><br>
+				<td>
+					<input type="radio" name=" " value="BLANCO">BLANCO
+					<input type="radio" name=" " value="ROJO">ROJO
+				</td>
+			</tr><br>
+			<tr>
+				<td>Nombre</td><br>
+				<td><input type="text" name="nombre"></td>
+			</tr><br>
+			<tr>
+				<td><label>Apellidos</label></td><br>
+				<td><input type="text" name="Apellido"></td>
+			</tr><br>
+			<tr>
+				<td><label>Carnet de identidad</label></td><br>
+				<td><input type="text" name="carnet"></td>
+			</tr><br>
+			<tr>
+				<td>Celular (debe contener 8 digitos)</td><br>
+				<td><input type="text" name="celular" placeholder="+591"></td>
+			</tr><br>
+			<tr>
+				<td>Email</td><br>
+				<td><input type="email" name="email"></td>
+			</tr><br>
+			<tr>
+				<td><label >Departamento</label></td><br>
+				<td>
+					<select name="departamentos" >
+						<option selected disabled value =""> seleccionar </option>
+						<option value="Chuquisaca">Chuquisaca</option>
+						<option value="La Paz">La Paz</option>
+						<option value="Oruro">Oruro</option>
+						<option value="Santa Cruz">Santa Cruz</option>
+						<option value="Pando">Pando</option>
+						<option value="Beni">Beni</option>
+						<option value="Tarija">Tarija</option>
+						<option value="Cochabamba">Cochabamba</option>
+					</select>
+				</td>
+			</tr><br><br>
+			<tr>
+				<td><label >Sucursal en que desea ser atendido </label></td><br>
+				<td>
+					<select name="Sucursales" >
+						<option selected disabled value =""> seleccione </option>
+						<option value="Chuquisaca">Chuquisaca</option>
+						<option value="La Paz">La Paz</option>
+						<option value="Oruro">Oruro</option>
+						<option value="Santa Cruz">Santa Cruz</option>
+						<option value="Pando">Pando</option>
+						<option value="Beni">Beni</option>
+						<option value="Tarija">Tarija</option>
+						<option value="Cochabamba">Cochabamba</option>
+					</select>
+				</td>
+			</tr><br><br>
+			<tr>
+				<td>¿Cómo  desea pagar la reserva ?</td><br>
+				<td>
+					<input type="radio" name=" " value="transferencia">Transferencia <br>
+					<input type="radio" name=" " value="tarjeta">Tarjeta Crédito /Débito <br>
+				</td>
+			</tr><br>
+			<tr>
+				<td>¿Cual moneda deseas elegir </td><br>
+				<td>
+					<input type="radio" name=" " value="Dólares">Dólares <br>
+					<input type="radio" name=" " value="Bolivianos">Bolivianos <br>
+				</td>
+			</tr><br>
+			<tr>
+				<td>Dirección (La misma de pago de luz)</td><br>
+				<td><input type="text" name="direccion"></td>
+			</tr><br><br>
+			<tr>
+				<td><input type="submit" value="Reservar online por US$300"></td>
+			</tr>
+
+	</form>
+	</DIV>
+
+</body>
+</html>

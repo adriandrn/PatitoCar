@@ -1,0 +1,170 @@
+/* body {
+   margin: 0;
+   padding: 0;
+   background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+   background-size: cover;
+   font-family: sans-serif;
+   height: 100vh;
+ } */
+ 
+ .signup-box {
+   width: 700px;
+   height: 800px;
+   background: #1b2127;
+   color: #fff;
+   top: 50%;
+   left: 50%;
+   position: fixed;
+   /* position: absolute; */
+   transform: translate(-50%, -50%);
+   box-sizing: border-box;
+   padding: 70px 30px;
+   border-radius: 0.5em;
+   display: none;
+ }
+ 
+.signup-box .avatar {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: absolute;
+ top: -50px;
+ left: calc(100% - 400px);
+}
+
+
+ /* f00d */
+ .signup-box .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -50px;
+  left: calc(100% - 400px);
+ }
+ 
+ 
+ .signup-box .avatar img {
+   width: 100px;
+   left: calc(50% - 50px);
+ }
+ 
+ .signup-box .exit {
+   width: 35px;
+   height: 35px;
+   /* background-color:white; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: 0;
+   right: 0;
+   border-radius: 50%;
+ }
+ 
+ .signup-box .exit:active {
+   transform: scale(.8);
+ }
+ 
+ .signup-box.remove{
+   display: none;
+ }
+ 
+ 
+ .signup-box .exit span::before {
+  content: '\f00d';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  color:red;
+  font-style: normal;
+  font-size: 2em;
+ }
+ 
+ .signup-box h1 {
+   margin: 0;
+   padding: 0 0 20px;
+   text-align: center;
+   font-size: 22px;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ .signup-box label {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   display: inline-block;
+ }
+ 
+ .signup-box input {
+   width: 100%;
+   margin-bottom: 20px;
+ }
+ 
+ .signup-box input[type="text"], .signup-box input[type="password"] {
+   border: none;
+   border-bottom: 1px solid #fff;
+   background: transparent;
+   outline: none;
+   height: 40px;
+   color: #fff;
+   font-size: 16px;
+ }
+ 
+ .signup-box input[type="submit"] {
+   margin-top: .8em;
+   border: none;
+   outline: none;
+   height: 40px;
+   background: #b80f22;
+   color: #fff;
+   font-size: 18px;
+   border-radius: 20px;
+ }
+ 
+ .signup-box input[type="submit"]:hover {
+   cursor: pointer;
+   background: #ffc107;
+   color: #000;
+ }
+ 
+ .signup-box a {
+   text-decoration: none;
+   font-size: 12px;
+   line-height: 20px;
+   color: darkgrey;
+ }
+ 
+ .signup-box a:hover {
+   color: #fff;
+ }
+ 
+ @media only screen and (max-width: 1366px) {
+  .signup-box {
+    top: 54%;
+    /* height: 90%; */
+    height: 670px;
+    width: 30%;
+  }
+
+  .signup-box .avatar {
+    left: calc(100% - 64%);
+   }
+
+ .signup-box h1 {
+  /* padding: 0 0 10px; */
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  .signup-box label {
+    font-size: .9em;
+  }
+
+  .signup-box input {
+    margin-bottom: 5px;
+    height: 8px;
+    font-size: .3em;
+  }
+}

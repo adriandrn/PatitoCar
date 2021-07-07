@@ -1,0 +1,10 @@
+# PatitoCar
+------------------------------------------------------------------------------------------------------------------
+Nombre                              CI         Cargo_en_el_team         direccion_de_repositorio
+------------------------------------------------------------------------------------------------------------------
+Adrian Antonio Chavez Ramos     11086441LP          LEAD                https://gitlab.com/adriandrn/PatitoCar.git
+Martin Victor Calle Vera        8444180             DISEÑADOR           https://gitlab.com/adriandrn/PatitoCar.git
+Edwin Calle Calle               9915582             BACKEND             https://gitlab.com/adriandrn/PatitoCar.git
+Felix Octavio Paucara Paucara   9247853LP           FRONTED             https://gitlab.com/adriandrn/PatitoCar.git
+Tahere Susan Bellott Huaranca   12667509LP          DBA                 https://gitlab.com/adriandrn/PatitoCar.git
+Cinthia Poma Mamani             9933081LP           DOCUMENTACIÓN       https://gitlab.com/adriandrn/PatitoCar.git 

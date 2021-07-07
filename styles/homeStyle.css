@@ -1,0 +1,248 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+
+.main{
+   width: 100%;
+   height: 100vh;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+   width: 100% ;
+   overflow: hidden;
+   margin: 0 auto;
+   /* background-color: aquamarine; */
+   display: grid;
+   grid-template-areas: "header header"
+   "aside main";
+   grid-template-columns: 300px 1fr;
+   box-sizing: border-box;
+}
+
+.header{
+   grid-area: header;
+   /* background-color: bisque; */
+   background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
+   height: auto;
+   padding: 0.8em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: myfont;
+   /* position: fixed; */
+   
+}
+
+.header .log-cont{
+   width: 3%;
+   /* background-color: teal; */
+   display: flex;
+   font-weight: bold;
+}
+
+.header .log-cont figcaption{
+   font-size: 3em;
+   color: white;
+}
+
+.header .log-cont figcaption span{
+   color: rgba(212, 208, 208, 0.795);
+}
+
+@font-face{
+   font-family: myfont ;
+   src: url("../fonts/FjallaOne-Regular.ttf");
+}
+
+img{
+   border-radius: 25px;
+   width: 100%;
+   align-items: center;
+   margin-right: .8em;
+}
+
+.header .user-det{
+   display: flex;
+   align-items: center;
+   font-size: 1.8em;
+   box-sizing: border-box;
+   justify-content: space-between;
+   width: 30%;
+   
+}
+
+
+.header .user-det .user-log{
+   margin-left: .8em;
+   width: 50%;
+}
+
+.header .user-det .user-log img{
+   width: 20%;
+}
+
+
+.aside{
+   grid-area: aside;
+   background-color: #1b2127;
+   box-sizing: border-box;
+   padding: 1.6em;
+   font-family: sans-serif;
+}
+
+.aside ul{
+   list-style: none;
+}
+.aside ul li a{
+   display: flex;
+   padding: .6em;
+   text-decoration: none;
+   /* border-bottom: 1px solid grey; */
+   color: white;
+   font-size: 1.4em;
+   
+}
+
+.aside ul li a:hover{
+   color: rgba(245, 245, 245, 0.596);
+}
+
+.body{
+   grid-area: main;
+   background-color: white;
+   display: grid;
+   grid-template-areas: "cars info";
+   grid-template-columns: 1fr 400px;
+   /* overflow: hidden !important; */
+}
+
+.body .data{
+   width: 93%;
+   /* background-color: rgb(159, 243, 243); */
+   margin: 0 auto;
+   margin-top: 3em;
+   grid-area: cars;
+}
+
+.body .others{
+   grid-area: info;
+   background-color: skyblue;
+   box-sizing: border-box;
+   padding: 1.5em;
+}
+
+.others .buttons{
+   display: flex;
+   padding: 0.8em;
+}
+
+.button{
+   display: flex;
+   padding: .7em;
+   border-radius: .6em;
+   justify-content: center; 
+   align-items: center;
+   margin-right: .4em; 
+   color: white;
+   text-decoration: none;
+   font-size: 1.3em;
+   font-family: myfont; 
+}
+
+.history h2{
+   font-size: 2em;
+   margin-bottom: .6em;
+}
+.history p{
+   font-size: 1.1em;
+}
+
+.button.red{
+   background-color: crimson;
+}
+
+.button.yellow{
+   background-color: rgb(255, 208, 0);
+   margin-bottom: .5em;
+}
+
+.button.green{
+   background-color: rgb(12, 78, 12);
+}
+
+.body .data .my-data{
+   background-color: rgba(255, 255, 255, 0.767);
+   padding: .6em;
+   line-height: 1.7em;
+   margin-bottom: 1em;
+}
+.body .data .cars {
+   /* overflow: auto; */
+   /* background-color: rgb(255, 182, 255); */
+   
+   
+}
+
+.cars h2{
+   font-family: myfont;
+   font-size: 2.5em;
+   margin-left: .5em;
+}
+
+.body .data .cars .list{
+   display: flex;
+   padding: .7em;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.body .data .cars .list .item-list{
+   width: 31%;
+   box-shadow: 0 36px 62px rgb(0 0 0 / 50%);
+   margin-right: .8em;
+   margin-bottom: .8em;
+   border-radius: 1em;
+   /* background-color: teal; */
+}
+
+.item-list figure{
+   width: 100%;
+   
+}
+.item-list figure img{
+   width: 100%;
+   height: auto;
+}
+
+.item-list p{
+   text-align: center;
+   font-size: 1.8em;
+   line-height: 1.7em;
+   font-family: myfont;
+}
+
+th, td{
+   padding: .8em;
+}
+
+table{
+   text-align: center;
+}
+table tr:nth-child(odd){
+   background-color: aqua;
+}
+
+td{
+   font-size: 1.2em;
+}
+
+th{
+   font-family: myfont;
+   font-size: 1.4em;
+}
+
+table tr:nth-child(even){
+   background-color: white;
+}

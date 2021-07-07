@@ -1,0 +1,296 @@
+*{
+   padding: 0;
+   margin: 0;
+   /* border: solid 1px black; */
+   /* font-family: 'Fjalla One'; */
+}
+
+body{
+   background-color: #30669a;
+}
+
+header{
+   height: auto;
+}
+
+/*-------------------------------------------------CABECERA---------------------------------------------------------*/
+
+
+.nav-top{
+   width: 100%;
+   height: 70%;
+   background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
+}
+
+.nav-top,.but {
+   display: inline-block;
+}
+
+.tit{
+   text-decoration: none;
+   font-family: Impact;
+   font-size: 3.5em;
+   vertical-align: middle;
+   color: white;
+}
+
+.log img {
+   height: 60px;
+   margin: 5px;
+   vertical-align: middle;
+}
+
+.but{
+   position: absolute;
+   right: 5px;
+   top: 15px;
+   width: 250px;
+   height: 40px;
+}
+
+.but input{
+   width: 48%;
+   height: 100%;
+   border-radius: 5px;
+   background-color: #144271;
+   border: none;
+   color: white;
+   padding: .3em;
+   font-size: 1.3em;
+}
+
+.but input:hover{
+   background-color: #0a0f14;
+}
+
+/*-------------------------------------------------BARRA DE NAVEGACION---------------------------------------------------------*/
+
+.nav-bot , .nav-bot ul{
+   background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+   height: 50px;
+}
+
+.nav-bot ul{
+   margin-left: 5px;
+}
+
+.nav-item {
+   display: inline-block;
+   margin-top: 7px;
+   padding: 3px;
+   background-color: #11499291;
+   border-radius: 5px;
+}
+
+.nav-item:hover {
+   box-shadow: 0 0 5px 0 #3498db inset, 0 0 5px 4px #3498bb;
+}
+
+@font-face {
+   font-family: myfont;
+   src: url(../fonts/FjallaOne-Regular.ttf);
+}
+
+.nav-item a{
+   font-family: myfont;
+   font-size: 1.3em;
+   text-decoration: none;
+   color: white;
+}
+
+.search{
+   position: absolute;
+   right: 7px;
+   top: 76px;
+   height: 35px;
+   /* width: 300px; */
+   width: 20%;
+   outline: none;
+   border: solid 1px grey;
+   padding-left: 8px;
+   font-size: 1.2em;
+   border-radius: 5px;
+}
+
+.search:focus{
+   border: solid 1px #026fff;
+}
+
+/*-------------------------------------------------SLIDE DE IMAGENES---------------------------------------------------------*/
+
+.slide{
+   width: 100%;
+   height: 512px;
+   margin: auto;
+   animation: cambio 30s infinite;
+}
+
+/* @media only screen and (min-width: 1366px) {
+   .slide{
+      
+   }
+   
+} */
+
+@keyframes cambio {
+   0%{
+      background-image: url(../img/renault/bann-koleos.jpg);
+   }
+   25%{
+      background: url(../img/renault/Ban-Koleos.jpg);
+   }
+   50%{
+      background: url(../img/suzuki/Ban-suzuki.jpg);
+   }
+   75%{
+      background: url(../img/renault/Ban-kwid.jpg);
+   }
+   100%{
+      background: url(../img/suzuki/Ban-suzuki.jpg);
+   }
+}  
+
+/*-------------------------------------------------TOP DE VENTAS---------------------------------------------------------*/
+
+.more-tit{
+   font-family: myfont;
+   font-size: 2em;
+   padding: 5px;
+   color: white;
+   /* margin-bottom: 20px; */
+}
+
+.more-sale{
+   height: 250px;
+   /* background-color:cadetblue; */
+   display: flex;
+   justify-content: center;
+}
+
+
+.more-sale .m-item {
+   background-color: white;
+   width: 15%; 
+   display: inline-block;
+   padding: 20px;
+   border-radius: 10px;
+   margin-left: 2%;
+}
+
+.m-item img{
+   width: 100%;
+}
+
+.m-item p{
+   text-align: center;
+   font-family: impact;
+}
+
+/*-------------------------------------------------ORGANIGRAMA---------------------------------------------------------*/
+
+.tit-org{
+   font-family: myfont;
+   font-size: 2em;
+   padding: 5PX;
+   color: white;
+}
+
+.organigrama{
+   /* height: 500px; */
+   /* background-color: thistle; */
+   justify-content: center;
+   display: flex;
+}
+
+.organigrama img{
+   width: 50%;
+   margin: 10px;
+}
+
+/*-------------------------------------------------PIE DE PAGINA---------------------------------------------------------*/
+
+.foot-bar{
+   height: 75px;
+   background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
+   display: flex;
+   justify-content: center;
+   /* vertical-align: middle; */
+}
+
+.foot-icon img{
+   width: 60px;
+   /* margin-top: 5px; */
+   padding: 7px;
+   left: 5px;
+}
+
+.foot-we{
+   /* background-color: teal; */
+   width: 25%;
+}
+.foot-we h4{
+   color: white;
+   margin-top: 2%;
+   text-align: center;
+   font-family: myfont;
+}
+.foot-we p{
+   color: white;
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.foot-conta{
+   /* background-color: skyblue; */
+   width: 25%;
+}
+
+.foot-conta h4{
+   margin-top: 4%;
+   text-align: center;
+   font-family: myfont;
+   color: white;
+}
+
+.foot-conta p{
+   color: white;
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-decoration: none;
+}
+
+.foot-ubic{
+   /* background-color: aquamarine; */
+   width: 30%;
+}
+
+.foot-ubic h4{
+   color: white;
+   margin-top: 3%;
+   font-family: myfont;
+   text-align: center;
+}
+.foot-ubic p{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+   color: white;
+}
+
+
+.foot-rrss{
+   width: 17%;
+   /* background-color: thistle; */
+   height: 75px;
+}
+
+.foot-rrss h4{
+   color: white;
+   font-family: myfont;
+} 
+
+.foot-rrss img{
+   width: 18%;
+   /* height: 55px; */
+   padding: 0;
+   margin: 0;
+}
